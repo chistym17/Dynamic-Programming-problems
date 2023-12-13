@@ -6,7 +6,7 @@ class Solution {
 public:
 int lis(vector<int>nums,int n,int curr,int prev,vector<vector<int>>&dp)
 {
-if(curr==n)return 0;
+if(curr==n)return 0; //problem in the base case
 if(dp[curr][prev+1]!=-1)return dp[curr][prev+1];
 
 //include
